@@ -1,0 +1,13 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outFile": "js/typed-json.js",
+    "module": "system",
+    "target": "es5"
+  },
+  "files": [
+    "src/bootstrap.ts"
+  ]
+}
