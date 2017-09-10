@@ -80,7 +80,7 @@ class Person {
 
 ## Documentation
 
- - [API reference](./doc/API-reference)
+ - [API reference](doc/API-reference)
 
 ## License
 
