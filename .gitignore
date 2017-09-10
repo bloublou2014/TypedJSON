@@ -24,3 +24,5 @@ __*
 package-lock.json
 src/*.js
 src/tests/*.js
+.idea
+.idea/workspace.xml
