@@ -3,11 +3,14 @@
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "outFile": "js/typed-json.js",
-    "module": "system",
+    "outDir": "js",
+    "module": "commonjs",
     "target": "es5"
   },
   "files": [
     "src/bootstrap.ts"
+  ],
+  "exclude": [
+    "src/tests"
   ]
 }
