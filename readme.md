@@ -41,6 +41,8 @@ typings install npm:typedjson-npm
  3. Parse and stringify with the [TypedJSON class](https://github.com/JohnWhiteTB/TypedJSON/wiki/API-reference#typedjson)
 
 ```typescript
+import {JsonObject, JsonMember} from "typedjson-npm";
+
 @JsonObject
 class Person {
     @JsonMember
@@ -65,15 +67,20 @@ person.getFullname(); // "John Doe"
 If you choose to omit using [ReflectDecorators](https://github.com/rbuckton/ReflectDecorators), the class (constructor function) of each [@JsonMember](https://github.com/JohnWhiteTB/TypedJSON/wiki/API-reference#jsonmember) decorated property must be specified manually through the [`type` setting](https://github.com/JohnWhiteTB/TypedJSON/wiki/API-reference#jsonmember), for example:
 
 ```typescript
-@JsonMember({ type: String })
-firstName: string;
+import {JsonObject, JsonMember} from "typedjson-npm";
+
+@JsonObject
+class Person {
+    @JsonMember({ type: String })
+    firstName: string;
+}
 ```
 
 [Learn more about decorators in TypeScript](https://github.com/Microsoft/TypeScript-Handbook/blob/master/pages/Decorators.md)
 
 ## Documentation
 
- - [API reference](https://github.com/JohnWhiteTB/TypedJSON/wiki/API-reference)
+ - [API reference](./doc/API-reference)
 
 ## License
 
