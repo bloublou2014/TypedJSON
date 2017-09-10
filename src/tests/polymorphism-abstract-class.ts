@@ -1,5 +1,5 @@
 ﻿import {isEqual} from "./object-compare";
-import {TypedJSON, JsonObject, JsonMember} from "../typed-json";
+import {TypedJSON, JsonObject, JsonMember} from "../bootstrap";
 
 abstract class Node {
     @JsonMember

@@ -1,5 +1,5 @@
 ﻿import {isEqual} from "./object-compare";
-import {JsonObject, JsonMember, TypedJSON} from "../typed-json";
+import {JsonObject, JsonMember, TypedJSON} from "../bootstrap";
 
 @JsonObject
 class Person {
