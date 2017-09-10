@@ -133,6 +133,7 @@ export class PolymorphismCustomNamesTest {
         const json = TypedJSON.stringify(company);
         const reparsed = TypedJSON.parse(json, Company);
 
+        Expect(reparsed instanceof Company);
         Expect(isEqual(company, reparsed));
     }
 }

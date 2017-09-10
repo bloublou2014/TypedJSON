@@ -112,6 +112,7 @@ export class PolymorphismAbstractClassTest{
         const json = TypedJSON.stringify(graph);
         const reparsed = TypedJSON.parse(json, Graph);
 
+        Expect(reparsed instanceof Graph);
         Expect(isEqual(graph, reparsed));
     }
 }

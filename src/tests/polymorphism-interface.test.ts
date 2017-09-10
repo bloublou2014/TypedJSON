@@ -126,6 +126,7 @@ export class PolymorphismInterfaceTest {
         const json = TypedJSON.stringify(graphGrid);
         const reparsed = TypedJSON.parse(json, GraphGrid);
 
+        Expect(reparsed instanceof GraphGrid);
         Expect(isEqual(graphGrid, reparsed));
     }
 }
